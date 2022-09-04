@@ -31,12 +31,16 @@ def main():
         for playlist in playlists:
             create_album_art(playlist)
     elif (option == '2'):
+        print_all_user_playlists(spotify_user_id, playlists)
+        option = input('Select playlist: ')
         selected_playlist = playlists[int(option) - 1]
         create_album_art(selected_playlist)
     elif (option == '3'):
         for playlist in playlists:
             upload_album_art(playlist)
     elif (option == '4'):
+        print_all_user_playlists(spotify_user_id, playlists)
+        option = input('Select playlist: ')
         selected_playlist = playlists[int(option) - 1]
         upload_album_art(selected_playlist)
     elif (option == '5'):
