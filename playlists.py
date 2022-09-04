@@ -19,7 +19,7 @@ def main():
     spotify_user_id = get_user_id()
     playlists = load_user_owned_playlists(spotify_user_id)
 
-    print(colored('SPOTIFY PLAYLIST MANAGEMENT: ', attrs=['bold']))
+    print(colored('SPOTIFY PLAYLIST COVER GENERATOR: ', attrs=['bold']))
     print('1: Create all playlist covers')
     print('2: Create individual playlist cover')
     print('3: Upload all playlist covers')
